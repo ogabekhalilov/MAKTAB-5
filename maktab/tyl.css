@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/img2.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.Navbar {
+    width: 100%;
+    height: 60px;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Navbar>h1 {
+    color: #fff;
+
+}
+
+.Navbar>button {
+    background: #fff;
+    padding: 3px 11px;
+    border-radius: 3px;
+    border: none;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links>button {
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.signInBox {
+    width: 750px;
+    height: 400px;
+    background: #fff;
+    display: flex;
+    position: absolute;
+    top: -400px;
+    left: 20%;
+    border: 4px solid #fff;
+    overflow: hidden;
+    transition: 1s;
+
+}
+
+.imgSignIn,
+.inpSignIn {
+    width: 50%;
+    height: 392px;
+}
+
+.imgSignIn {
+    background-image: url(./img/img1.jpg);
+    background-size: cover;
+    position: relative;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.imgSignIn>p {
+    text-align: center;
+}
+
+.inpSignIn {
+    padding: 25px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inpSignIn {
+    text-align: center;
+    position: relative;
+}
+
+.inpSignIn input {
+    width: 100%;
+    height: 38px;
+    text-indent: 10px;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 3px;
+    outline: none;
+
+}
+
+.inpSignIn>p {
+    font-size: 13px;
+    color: dodgerblue;
+    text-align: start;
+}
+
+.inpSignIn>div {
+    font-size: 13px;
+    text-align: center;
+}
+
+.inpSignIn>div>button {
+    font-size: 13px;
+    text-align: center;
+    color: dodgerblue;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.inpSignIn>span {
+    position: absolute;
+    right: 15px;
+    top: 3px;
+    font-size: 28px;
+    transform: rotate(45deg);
+    color: gray;
+    cursor: pointer;
+}
+
+.errorBox {
+    width: 100%;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#error {
+    color: red;
+    display: none;
+}
+
+.inpSignIn>button {
+    width: 100%;
+    height: 38px;
+    border: none;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    background: dodgerblue;
+    border-radius: 3px;
+
+}
+
+
+.Loading {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: #000000b2;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.boxload {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner-border {
+    color: #fff;
+}
+
+
+
+
+/* ------------------- */
+.Register {
+    background: #000;
+    background-size: cover;
+    position: relative;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.inpRegister {
+    width: 100%;
+    height: 100vh;
+}
+
+.imgSignIn>p {
+    text-align: center;
+}
+
+.inpRegister {
+    padding: 25px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inpRegister {
+    text-align: center;
+    position: relative;
+}
+
+.inpRegister input {
+    width: 100%;
+    height: 38px;
+    text-indent: 10px;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 3px;
+    outline: none;
+
+}
+
+.inpRegister>p {
+    font-size: 13px;
+    color: dodgerblue;
+    text-align: start;
+}
+
+.inpRegister>div {
+    font-size: 13px;
+    text-align: center;
+}
+
+.inpRegister>div>button {
+    font-size: 13px;
+    text-align: center;
+    color: dodgerblue;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.bt{
+    height: 30px;
+     border: none;
+     border-radius: 10px;
+     background-color: aqua;
+}

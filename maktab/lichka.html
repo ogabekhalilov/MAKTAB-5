@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Личный кабинет</title>
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-header">
+      <h1>Личный кабинет</h1>
+    </div>
+    <div class="profile-content">
+      <img src="avatar.jpg" alt="Аватар" class="avatar">
+      <div class="user-info">
+        <h2 id="username">Имя пользователя</h2>
+        <p>Email: <span id="email">user@example.com</span></p>
+        <p>Статус: <span id="status"></span></p>
+        <button onclick="changeStatus()">Изменить статус</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>

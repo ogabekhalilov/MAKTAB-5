@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Добавление и удаление текстовых элементов</title>
+</head>
+<body>
+    <div class="admin-panel">
+        <div class="sidebar">
+            <h2>Меню</h2>
+            <ul>
+                <li><a href="#" onclick="showPage('dashboard')">Главная</a></li>
+                <li><a href="#" onclick="showPage('users')">Пользователи</a></li>
+                <li><a href="#" onclick="showPage('settings')">Настройки</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div id="dashboard" class="page">
+                <h2>Главная страница</h2>
+                <p>Добро пожаловать в админ-панель!</p>
+            </div>
+            <div id="users" class="page" style="display: none;">
+                <h2>Управление пользователями</h2>
+                <p>Список пользователей и возможность управления ими.</p>
+            </div>
+            <div id="settings" class="page" style="display: none;">
+                <h2>Настройки админ-панели</h2>
+                <p>Настройки и параметры админ-панели.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./sdds.js"></script>
+</html>

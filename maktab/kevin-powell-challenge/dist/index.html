@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица с данными</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+   
+    </style>
+</head>
+<body>
+
+<h2>Таблица с данными</h2>
+
+<input type="text" id="dataInput" placeholder="Введите данные">
+<button onclick="addData()">Добавить в таблицу</button>
+
+<table id="dataTable">
+  
+    <tr></tr>
+</table>
+
+<script>
+    // Получаем сохраненные данные из localStorage или создаем новый массив
+    var data = JSON.parse(localStorage.getItem('dataTable')) || [];
+
+    // Функция для добавления данных в таблицу
+    function addData() {
+        var inputData = document.getElementById("dataInput").value;
+
+        if (inputData.trim() !== "") {
+            data.push(inputData);
+
+            // Очищаем поле ввода
+            document.getElementById("dataInput").value = "";
+
+            // Сохраняем данные в localStorage
+            localStorage.setItem('dataTable', JSON.stringify(data));
+
+            // Обновляем таблицу
+            updateTable();
+        }
+    }
+
+    // Функция для обновления таблицы
+    function updateTable() {
+        var table = document.getElementById("dataTable");
+
+        // Очищаем текущие строки в таблице 
+        table.innerHTML = "<tr><th></th></tr>";
+
+        // Добавляем новые строки в таблицу
+        for (var i = 0; i < data.length; i++) {
+            var row = table.insertRow(-1);
+            var cell = row.insertCell(0);
+            cell.innerHTML = data[i];
+        }
+    }
+
+    // Первичное отображение данных при загрузке страницы
+    updateTable();
+</script>
+
+</body>
+</html>

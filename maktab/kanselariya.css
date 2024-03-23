@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.product-list,
+.cart {
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.total-amount {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.product,
+.cart-item{
+    border: .5px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
